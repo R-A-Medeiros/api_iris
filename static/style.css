@@ -1,0 +1,274 @@
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Reset CSS básico e configurações globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos da página principal */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #e9b7eed0 0%, #5c00911a 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 0 0 10px #6c63ff, 0 0 40px #6c63ff;
+    animation: fadeIn 0.5s ease-in-out;
+    background: linear-gradient(90deg, #f5f5f5 0%, #e5e5e5 100%), #1a1a1a;
+    background-clip: padding-box, border-box;
+    border-radius: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos da imagem à esquerda */
+.form-image {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    animation: scaleIn 1s ease-in-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Estilos do formulário à direita */
+.form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+    padding: 3rem;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Estilos do cabeçalho do formulário */
+.form-header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos do grupo de botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Estilos do botão de limpar */
+.login-button button,
+.about-us-button button,
+.about-iris-button button {
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #6c63ff;
+    margin: 0.5rem;
+}
+
+.login-button button:hover,
+.about-us-button button:hover,
+.about-iris-button button:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.login-button button a,
+.about-us-button button a,
+.about-iris-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #6c63ff;
+    display: block;
+}
+
+.login-button button a span,
+.about-us-button button a span,
+.about-iris-button button a span {
+    color: #6c63ff;
+}
+
+/* Estilos do título do cabeçalho */
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+}
+
+/* Estilos do grupo de inputs */
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* Estilos das caixas de input */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 45%;
+}
+
+.input-box input {
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #fff;
+    color: #333;
+}
+
+.input-box input:hover {
+    background-color: #f5f5f5;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6c63ff;
+}
+
+.input-box input::placeholder {
+    color: #999;
+}
+
+/* Estilos do botão de continuar */
+.continue-button button {
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.8rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: #fff;
+}
+
+.continue-button button:hover {
+    background-color: #6b63fff1;
+    transform: scale(1.05);
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Estilos do texto "Identificar Flor" */
+.black-text {
+    color: #000;
+}
+
+/* Consulta de mídia para telas menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .form-image {
+        width: 100%;
+    }
+
+    .form-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .input-box {
+        width: 100%;
+    }
+}
+
+/* Estilos da saída de espécie da íris */
+.output-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.output-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6c63ff;
+    margin-bottom: 0.5rem;
+}
+
+.output-result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}

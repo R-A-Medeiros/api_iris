@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    padding: 45px 3rem;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    width: 15%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.navbar {
+    width: 70%;
+    text-align: center;
+    display: inline;
+    padding-left: 100px;
+}
+
+.navbar a {
+    color: black;
+    margin-right: 30px;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: #e92b1a;
+}
+
+.icons {
+    float: right;
+    width: 15%;
+}
+
+.icons span {
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+.icons span:hover {
+    color: #e92b1a;
+}
+
+.icons i {
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.icons i:hover {
+    color: #e92b1a;
+}
+
+.first {
+    background-attachment: fixed;
+    background-image: url(https://edge.99images.com/photos/wallpapers/flowers/white-flower%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-gshdj.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10rem;
+    text-align: center;
+}
+
+.first h1 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.first p {
+    font-family: 'Lora', serif;
+    color: #5a5a5a;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.first img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.second {
+    background: #ff1141;
+    background: -webkit-linear-gradient(to right, #ff7474, #ed1842);
+    background: linear-gradient(to right, #ff818112, #e814141b);
+    padding: 1rem;
+}
+
+.second span {
+    overflow: hidden;
+    color: black;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.second span:hover {
+    letter-spacing: 1px;
+    color: #e92b1a;
+}
+
+.categories {
+    float: start;
+}
+
+.third {
+    background: #ff1141;
+    background: -webkit-linear-gradient(to right, #ff7474, #ed1842);
+    background: linear-gradient(to right, #ff818112, #e814141b);
+}
+
+.categories span {
+    margin-left: 20px;
+}
+
+.box {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box img {
+    overflow: hidden;
+    width: 100%;
+    transition: .7s;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.all, .allsecond {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.priceflower {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.priceflower a, p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.priceflower a {
+    color: black;
+    font-weight: 500;
+}
+
+.addtocard {
+    opacity: 0;
+    transition: .4s;
+    color: black;
+}
+
+.addtocard:hover {
+    color: #ed1842;
+}
+
+.box:hover .addtocard {
+    opacity: 1;
+}
+
+.priceflower p {
+    padding-right: 240px;
+    transition: .4s;
+}
+
+.box:hover p {
+    opacity: 0;
+}
+
+.fourth {
+    background: #ff1141;
+    background: -webkit-linear-gradient(to right, #ff7474, #ed1842);
+    background: linear-gradient(to right, #ff818112, #e814141b);
+    padding: 20rem 0;
+    text-align: center;
+}
+
+.flowerexperts {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+}
+
+.flowerexperts h1 {
+    color: #1e1e1e;
+    font-weight: 100;
+}
+
+.flowerexperts p {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(112, 112, 112);
+}
+
+.experts img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.exp {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.exp img {
+    overflow: hidden;
+    width: 100%;
+    transition: .7s;
+}
+
+.exp img:hover {
+    transform: scale(1.2);
+}
+
+.exp h4, p {
+    text-align: center;
+}
+
+.exp h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.exp p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.about-iris {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.iris-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.iris-type {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iris-type:hover {
+    transform: scale(1.05);
+}
+
+.iris-type img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.iris-type h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.iris-type p {
+    font-family: 'Lora', serif;
+    color: #5a5a5a;
+    font-size: 14px;
+}
+
+/* Mídia para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+    .logo,
+    .navbar,
+    .icons {
+        width: 100%;
+        float: none;
+    }
+
+    .navbar {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+        padding-left: 0;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .header {
+        padding: 20px 1rem;
+    }
+
+    .first {
+        padding: 5rem 1rem;
+    }
+
+    .first h1 {
+        font-size: 32px;
+        width: auto;
+    }
+
+    .first p {
+        width: auto;
+    }
+
+    .iris-types {
+        flex-direction: column;
+    }
+
+    .iris-type {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .exp img {
+        width: 100%;
+    }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.about-iris {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+p {
+    font-family: 'Lora', serif;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.iris-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.iris-type {
+    width: 30%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iris-type:hover {
+    transform: scale(1.05);
+}
+
+.iris-type img {
+    width: 100%;
+    height: 200px; /* Altura desejada */
+    object-fit: cover; /* Evita distorções na imagem */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.iris-type h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.iris-type p {
+    font-family: 'Lora', serif;
+    color: #5a5a5a;
+    font-size: 14px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Reset CSS básico e configurações globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos da página principal */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+section.about-iris {
+    text-align: center;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, #e8e5ff, #11005e71);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Adição do efeito de neon nas bordas */
+section.about-iris::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #6a1b9a, #4a148c);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+h1,
+p,
+.iris-type,
+.btn-go-back {
+    position: relative;
+    z-index: 1;
+    color: #ffffff; /* Alterando a cor para branca */
+}
+
+h1,
+p {
+    /* Adicionando sombra para destacar do fundo com neon */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iris-type,
+.btn-go-back {
+    /* Adicionando borda para destacar do fundo com neon */
+    border: 2px solid #6a1b9a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.iris-type:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.iris-type img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.iris-type h2,
+.iris-type p,
+.btn-go-back {
+    font-family: 'Inter', sans-serif; /* Alterando a fonte para Inter */
+    color: #ffffff; /* Alterando a cor para branca */
+}
+
+.iris-type h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.iris-type p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-go-back {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-go-back:hover {
+    background-color: #4a148c;
+}
+.iris-type {
+    width: calc(20% - 20px);  /* Largura original */
+    margin: 10px;  /* Margem original */
+
+    /* Adicione ou ajuste estas propriedades */
+    max-width: calc(20% - 20px); /* Largura máxima ajustada */
+    width: calc(20% - 20px); /* Largura ajustada */
+}
+
+/* Mídia para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+    .iris-type {
+        width: calc(33.33% - 20px);  /* Ajuste para três colunas em telas menores */
+        max-width: calc(33.33% - 20px);  /* Largura máxima ajustada para três colunas */
+    }
+}
+
+
+
+

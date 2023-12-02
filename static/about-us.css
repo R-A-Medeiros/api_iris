@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e1bee7, #311b92); /* Gradiente de roxo claro para roxo neon */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.content-section {
+    width: 55%;
+}
+
+.developer-section {
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.developer {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 45%;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideIn 1.5s forwards;
+}
+
+.developer img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.developer p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s forwards;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.content-section .content .button {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.content-section .content .button a {
+    background-color: #6200ea; /* Roxo neon */
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.content-section .content .button a:hover {
+    background-color: #3700b3; /* Roxo neon mais escuro ao passar o mouse */
+    color: #fff;
+}
+
+.content-section .social {
+    margin: 40px 0;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.content-section .social i {
+    color: #6200ea; /* Roxo neon */
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-section .social i:hover {
+    color: #3700b3; /* Roxo neon mais escuro ao passar o mouse */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content-section,
+    .developer-section {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .developer img {
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .content .button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .content-section .content .button a {
+        padding: 9px 30px;
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+}
+
+/* Adicione a animação de hover suave para o botão de voltar */
+.button a {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button a:hover {
+    background-color: #3700b3; /* Roxo neon mais escuro ao passar o mouse */
+    color: #fff;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
